@@ -24,7 +24,6 @@ league_urls.append('https://www.whoscored.com/Regions/252/Tournaments/2/England-
 league_urls.append('https://www.whoscored.com/Regions/108/Tournaments/5/Italy-Serie-A')
 league_urls.append('https://www.whoscored.com/Regions/81/Tournaments/3/Germany-Bundesliga')
 league_urls.append('https://www.whoscored.com/Regions/74/Tournaments/22/France-Ligue-1')
-league_urls.append('https://www.whoscored.com/Regions/155/Tournaments/13/Netherlands-Eredivisie')
 
 
 def bypass_cookie_request():
