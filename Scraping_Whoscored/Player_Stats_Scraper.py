@@ -9,7 +9,6 @@ from selenium.webdriver.support.select import Select
 import os.path
 
 chrome_options = Options()
-chrome_options.add_extension('Extensions\Adblock-Plus-free-ad-blocker_v3.8.0.crx')
 chrome_options.add_argument('--disable-user-media-security')
 
 driver = webdriver.Chrome(chrome_options=chrome_options)
@@ -28,7 +27,7 @@ league_urls.append('https://www.whoscored.com/Regions/74/Tournaments/22/France-L
 
 def bypass_cookie_request():
     try:
-        driver.find_element_by_xpath('//*[@id="qcCmpButtons"]/button').click()
+        driver.find_elementfind_element(By.XPATH,//*[@class="qc-cmp2-summary-buttons"]/button').click()
         # print('Cookie Confirmation bypassed')
         time.sleep(5)
     except NoSuchElementException:
@@ -40,7 +39,7 @@ def find_league(url):
     league_country = str(url).lower()
     global count_start
     global count_end
-    if league_country.find('netherlands') != -1 or league_country.find('france') != -1 or league_country.find('england') != -1 or league_country.find('germany') != -1:
+    if league_country.find('france') != -1 or league_country.find('england') != -1 or league_country.find('germany') != -1:
         count_start = 2
         count_end = 11
     else:
