@@ -1,2 +1,0 @@
-from scrapewhoscored.main import *
-
